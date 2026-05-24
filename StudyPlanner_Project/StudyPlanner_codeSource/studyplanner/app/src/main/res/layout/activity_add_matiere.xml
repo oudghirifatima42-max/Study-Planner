@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nouvelle Matière"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1a3a2a"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nom -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de la matière *"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex : Mobile Avancé"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Coefficient -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coefficient *"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+        <EditText
+            android:id="@+id/etCoef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex : 3"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Heures -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heures de révision *"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+        <EditText
+            android:id="@+id/etHeures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex : 20"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Date examen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date d'examen *"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex : 2026-06-15"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Note objectif -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note objectif (/20) *"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex : 14"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Boutons -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Enregistrer"
+            android:textSize="16sp"
+            android:backgroundTint="#1a3a2a"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Annuler"
+            android:textSize="16sp"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#333333"/>
+
+    </LinearLayout>
+</ScrollView>

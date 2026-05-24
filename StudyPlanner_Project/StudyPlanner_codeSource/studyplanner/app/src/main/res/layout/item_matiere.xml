@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical">
+
+    <!-- Icone matiere -->
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="📖"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#E8F5E9"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- Nom + infos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom matiere"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1a3a2a"/>
+
+        <TextView
+            android:id="@+id/tvInfos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coef 2  •  10h  •  2026-06-15"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <!-- Boutons CRUD -->
+    <ImageButton
+        android:id="@+id/btnDetail"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginEnd="4dp"/>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginEnd="4dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</LinearLayout>

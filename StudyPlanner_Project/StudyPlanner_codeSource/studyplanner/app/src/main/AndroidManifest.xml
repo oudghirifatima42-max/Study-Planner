@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studyplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Study Planner"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyPlanner">
+
+        <!-- Welcome = Launcher -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Liste des matières -->
+        <activity android:name=".ListeMatieresActivity" />
+
+        <!-- Ajouter -->
+        <activity android:name=".AddMatiereActivity" />
+
+        <!-- Détail -->
+        <activity android:name=".DetailMatiereActivity" />
+
+        <!-- Modifier -->
+        <activity android:name=".UpdateMatiereActivity" />
+
+    </application>
+
+</manifest>

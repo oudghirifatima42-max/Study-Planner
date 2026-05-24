@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F9F7">
+
+    <!-- En-tête vert -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a3a2a"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Détail de la matière"
+            android:textSize="14sp"
+            android:textColor="#A7F3D0"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Informations -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvDetailCoef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coefficient : -"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailHeures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heures prevues : -"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Examen : -"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objectif : -"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Progression -->
+        <TextView
+            android:id="@+id/tvProgression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progression : 0%"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1a3a2a"
+            android:layout_marginBottom="8dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Ajouter chapitre -->
+        <Button
+            android:id="@+id/btnAjouterChapitre"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="+ Ajouter un chapitre"
+            android:textSize="16sp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Aucun chapitre -->
+        <TextView
+            android:id="@+id/tvAucunChapitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aucun chapitre ajoute"
+            android:textSize="15sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Liste chapitres -->
+        <ListView
+            android:id="@+id/listViewChapitres"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="#DDDDDD"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Boutons -->
+        <Button
+            android:id="@+id/btnModifier"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✏️ Modifier"
+            android:textSize="16sp"
+            android:backgroundTint="#1a3a2a"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnSupprimer"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="🗑 Supprimer"
+            android:textSize="16sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Retour"
+            android:textSize="16sp"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#333333"/>
+
+    </LinearLayout>
+
+</LinearLayout>
